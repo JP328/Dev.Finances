@@ -283,6 +283,7 @@ small strong {
 }
 
 input {
+  background-color: white;
   border: none;
   border-radius: 0.25rem;
   padding: 0.8rem;
