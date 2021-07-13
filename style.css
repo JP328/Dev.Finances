@@ -255,7 +255,18 @@ td.income {
 }
 
 .modal {
-  background: linear-gradient(155deg, #c2c2c2, #dddddd, #dddddd, #c2c2c2);
+  background: linear-gradient(
+    155deg,
+    #c2c2c2,
+    #f1f1f1,
+    #c2c2c2,
+    #c2c2c2,
+    #dddddd,
+    #dddddd,
+    #c2c2c2,
+    #c2c2c2,
+    #c2c2c2
+  );
   padding: 2.4rem;
   width: 90%;
   max-width: 650px;
