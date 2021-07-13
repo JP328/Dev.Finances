@@ -233,7 +233,7 @@ const Form = {
   clearFields(transaction) {
     Form.description.value = ''
     Form.amount.value = ''
-    Form.date.value = ''
+    //Form.date.value = ''
   },
 
   submit(event) {
