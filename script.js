@@ -15,6 +15,7 @@ const Modal = {
 */
 const ToggleModal = () => {
   document.querySelector('.modal-overlay').classList.toggle('active')
+  document.querySelector('.modal').classList.toggle('animation')
 }
 
 const Storage = {
@@ -31,34 +32,6 @@ const Storage = {
 
 const Transaction = {
   all: Storage.get(),
-  /*[
-    {
-      description: 'Luz',
-      amount: -50000,
-      date: `01/01/1000`
-    },
-    {
-      description: 'Website',
-      amount: 500000,
-      date: `02/02/2000`
-    },
-    {
-      description: 'Internet',
-      amount: -20000,
-      date: `05/07/2021`
-    },
-    {
-      description: 'App',
-      amount: 205050,
-      date: `02/07/2020`
-    },
-    {
-      description: 'Aluguel',
-      amount: -125050,
-      date: `22/07/2021`
-    }
-  ],
-  */
 
   add(transaction) {
     Transaction.all.push(transaction)

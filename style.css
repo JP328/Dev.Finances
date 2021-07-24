@@ -164,14 +164,38 @@ header {
     #007400,
     #008f16,
     #33aa33,
-    #008f16,
+    #4dbd4d,
+    #33aa33,
     #008f16,
     #007400,
     #005b00
   );
   color: white;
+  background-size: 500% 500%;
+  animation: moveBackground 15s linear infinite;
 }
 
+/*======== Animations ========*/
+@keyframes moveBackground {
+  0%,
+  100% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+}
+
+@keyframes form {
+  from {
+    opacity: 0;
+    transform: translateY(35%) scale(40%);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+  }
+}
 /*======== Table ========*/
 #transaction {
   display: block;
@@ -270,6 +294,10 @@ td.income {
   padding: 2.4rem;
   width: 90%;
   max-width: 650px;
+}
+
+.modal.animation {
+  animation: form 500ms linear;
 }
 /*======== Form ========*/
 .form {
