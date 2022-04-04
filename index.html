@@ -102,14 +102,26 @@
               />
 
               <small
-                >Use o sinal <strong>-</strong>(negativo) para despesas e
-                <strong>,</strong>(vírgula) para as casas decimais
+                >Use <strong>","</strong>(vírgula) para as casas decimais.
               </small>
+            </div>
+
+            <div class="custom-radio">
+              <input type="radio" value="1" name="minus/plus" id="minus" />
+              <label for="minus">Subtração</label>
+              <input
+                type="radio"
+                value="0"
+                name="minus/plus"
+                id="plus"
+                checked
+              />
+              <label for="plus">Adição</label>
             </div>
 
             <div class="input-group">
               <label class="sr-only" for="date">Valor</label>
-              <input type="date" id="date" name="date" value="2021-01-01" />
+              <input type="date" id="date" name="date" value="2022-01-01" />
             </div>
 
             <div class="input-group actions">

@@ -130,6 +130,10 @@ const Utils = {
     value = value * 100
     //expressão regular, não deu certo devido a bugs
     //value = Number(value.replace(/\,?\.?/g, "")) * 100
+    if (document.getElementById('minus').checked) {
+      value = -+value
+    }
+    console.log(value)
 
     return Math.round(value)
   },
