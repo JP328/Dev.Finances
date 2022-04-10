@@ -57,9 +57,15 @@
       <section id="transaction">
         <h2 class="sr-only">Transações</h2>
 
-        <a href="#" onclick="ToggleModal()" class="button new"
-          >+ Nova Transação</a
-        >
+        <div id="buttonsBox">
+          <a href="#" onclick="ToggleModal()" class="button-new"
+            >Nova Transação</a
+          >
+
+          <a href="#" onclick="Transaction.removeAll()" class="button-del"
+            >Limpar Lista</a
+          >
+        </div>
 
         <table id="data-table">
           <thead>

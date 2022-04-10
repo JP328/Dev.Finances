@@ -45,6 +45,12 @@ const Transaction = {
     App.reload()
   },
 
+  removeAll() {
+    Transaction.all.splice(0, 999)
+
+    App.reload()
+  },
+
   incomes() {
     //somar as entradas
     let income = 0
@@ -144,7 +150,6 @@ const Utils = {
     return `${splittedDate[2]}/${splittedDate[1]}/${splittedDate[0]}`
   },
 
-  //Muito conteúdo em uma funçao só!
   formatCurrency(value) {
     //Transforma o value em números e aplica uma lógica de programação concisa de if-else eficaz e muito interresante
     const signal = Number(value) < 0 ? '- ' : ''
@@ -210,7 +215,7 @@ const Form = {
   clearFields(transaction) {
     Form.description.value = ''
     Form.amount.value = ''
-    //Form.date.value = ''
+    // Form.date.value = ''
   },
 
   submit(event) {
